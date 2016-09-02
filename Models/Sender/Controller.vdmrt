@@ -1,0 +1,42 @@
+class Controller
+
+types
+
+Message :: x: real
+					 y: real
+					 z: real
+
+instance variables
+
+-- access shared variable "out"
+out: StringPort;
+
+operations
+
+-- constructor for controller
+public Controller: StringPort ==> Controller
+Controller(s) == (
+	out := s;
+);
+
+operations
+
+-- send counter out and increase counter
+private loop: () ==>()
+loop() == cycles(2) 
+(
+	-- generate a random message
+	dcl m: Message := mk_Message(MATH`rand(10), MATH`rand(10), MATH`rand(10));
+
+	-- convert to string representation and send
+	-- N.B. using a tuple until the library can handle custom types
+	out.setValue(VDMUtil`val2seq_of_char[real*real*real](mk_(m.x, m.y, m.z))); 
+
+  -- debug
+  IO`printf("Sender.fmu: sent %s at %s\n", [m, time/1e9]);
+);
+
+thread
+periodic(10E6,0,0,0)(loop);  
+
+end Controller

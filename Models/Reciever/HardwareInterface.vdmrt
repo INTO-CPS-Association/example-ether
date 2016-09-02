@@ -1,0 +1,8 @@
+class HardwareInterface
+
+instance variables
+
+-- @ interface: type = input, name="iin";
+public iin : StringPort := new StringPort("");
+
+end HardwareInterface

@@ -1,0 +1,22 @@
+system System
+
+instance variables
+
+-- interface required by FMU import/export
+public static hwi: HardwareInterface := new HardwareInterface();
+
+-- controller object
+public static ether : [Ether] := nil;
+
+-- CPU
+cpu1: CPU := new CPU(<FP>, 20);
+
+operations
+
+public System: () ==> System
+System() == (
+	ether := new Ether([hwi.sender], [hwi.receiver]);
+  cpu1.deploy(ether, "Ether");
+);
+
+end System

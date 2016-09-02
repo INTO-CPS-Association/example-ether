@@ -1,0 +1,12 @@
+{
+  "fmus": {
+    "{sender}": "Sender.fmu",
+    "{receiver}": "Reciever.fmu"
+  },
+  "connections": {
+    "{sender}.sender.out": [
+      "{receiver}.receiver.iin"]
+  },
+  "parameters": {
+  }
+}

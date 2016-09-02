@@ -1,0 +1,37 @@
+class Controller
+
+types
+
+Message :: x: real
+					 y: real
+					 z: real
+
+instance variables
+
+iin: StringPort;
+
+operations
+
+public Controller: StringPort ==> Controller
+Controller(s) == (
+	iin := s
+);
+
+private loop: () ==>()
+loop() == cycles(2) 
+(
+	-- read input
+	dcl input: seq of char := iin.getValue();
+	
+	-- try to convert from string representation and print
+	-- N.B. using a tuple until the library can handle custom types 
+	let mk_(b,v) = VDMUtil`seq_of_char2val[real*real*real](input)
+	in
+		-- debug 
+		if b then IO`printf("Receiver.fmu: got %s at %s\n", [mk_Message(v.#1, v.#2, v.#3), time/1e9]);
+);
+
+thread
+periodic(10E6,0,0,0)(loop);  
+
+end Controller

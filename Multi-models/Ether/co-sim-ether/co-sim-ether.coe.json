@@ -1,0 +1,1 @@
+{"startTime":0,"endTime":1,"multimodel_path":"Multi-models\\Ether\\test.mm.json","livestream":{"{sender}.sender":["out"]},"algorithm":{"type":"var-step","initsize":0.00001,"size":[0.00005,10],"constraints":{}}}

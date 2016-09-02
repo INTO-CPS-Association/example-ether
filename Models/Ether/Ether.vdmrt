@@ -1,0 +1,41 @@
+class Ether
+
+instance variables
+
+-- access shared variables
+incoming: seq of StringPort;
+outgoing: seq of StringPort;
+inv len incoming = len outgoing;
+
+operations
+
+-- constructor for controller
+public Ether: seq of StringPort * seq of StringPort ==> Ether
+Ether(i,o) == (
+	incoming := i;
+	outgoing := o
+);
+
+operations
+
+-- send counter out and increase counter
+private loop: () ==>()
+loop() == cycles(2) 
+(
+	for i = 1 to len incoming do (
+		for j = 1 to len outgoing do (
+
+			-- pass each input to each output
+			dcl x: seq of char := incoming(i).getValue();
+			outgoing(j).setValue(x);
+			
+			-- debug			
+			IO`printf("Ether: passed %s from %s to %s at %s", [x, i, j, time/1e9]);
+		)
+	)
+);		
+
+thread
+periodic(10E6,0,0,0)(loop);  
+
+end Ether
