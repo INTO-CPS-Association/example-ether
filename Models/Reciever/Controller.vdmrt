@@ -23,12 +23,26 @@ loop() == cycles(2)
 	-- read input
 	dcl input: seq of char := iin.getValue();
 	
-	-- try to convert from string representation and print
-	-- N.B. using a tuple until the library can handle custom types 
-	let mk_(b,v) = VDMUtil`seq_of_char2val[real*real*real](input)
-	in
-		-- debug 
-		if b then IO`printf("Receiver.fmu: got %s at %s\n", [mk_Message(v.#1, v.#2, v.#3), time/1e9]);
+	IO`printf("RECEIVER.FMU: Got this whole string %s at %s\n", [input, time/1e9]);
+	
+	-- try to convert from string to list of strings
+	let mk_(list,l) = VDMUtilDebug`seq_of_char2val[seq of (real*real*real)](input)
+	in if list then (
+	  IO`printf("RECEIVER.FMU: Made this list %s at %s\n", [l, time/1e9]);
+		for all i in set inds l do (
+			let x = l(i) in 
+		    -- N.B. using a tuple until the library can handle custom types 
+			  -- debug 
+			  IO`printf("RECEIVER.FMU: Got %s at %s\n", [mk_Message(x.#1, x.#2, x.#3), time/1e9])
+	  )
+	) else (
+		let mk_(single,s) = VDMUtilDebug`seq_of_char2val[real*real*real](input)
+		in if single then (
+		  -- N.B. using a tuple until the library can handle custom types 
+		  -- debug 
+			IO`printf("RECEIVER.FMU: Got %s at %s\n", [mk_Message(s.#1, s.#2, s.#3), time/1e9])
+		)
+	)
 );
 
 thread

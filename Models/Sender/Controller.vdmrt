@@ -33,7 +33,7 @@ loop() == cycles(2)
 	out.setValue(VDMUtil`val2seq_of_char[real*real*real](mk_(m.x, m.y, m.z))); 
 
   -- debug
-  IO`printf("Sender.fmu: sent %s at %s\n", [m, time/1e9]);
+  IO`printf("SENDER.FMU: Sent %s at %s\n", [m, time/1e9]);
 );
 
 thread
