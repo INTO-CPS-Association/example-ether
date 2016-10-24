@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Overview diagram" version="4">
+  <OBJECT>
+    <ID name="Overview diagram" mc="Standard.StaticDiagram" uid="0cfa6d70-bd26-4de8-815a-7811889d8593"/>
+    <PID name="ethersysml" mc="Standard.Package" uid="5e463016-660e-4b94-8aaf-8ec57a3a54de"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">320</ATT>
+      <ATT name="UiData"><![CDATA[eJztnGlP40gQhv+Kle8d3IePCIYREGYWDQMIZlbaT6jc3QkefLB2h+D59dvOwUIg2RAcr20sIREfXX3UW+56Coe9zw9hYNzLJPXj6FMHd82O8Xl/79z7JbkyfKFPdQyV3clPnTgZdsNYyMCPu8KHYQJhVwpfxUk3VaD8264MZCgjlU6P+fymr+HV5Lg/Pe4YIfyKk+vHTs3O/t5FEt/JRGVGBKHuK4AsHqk+KNDX/oRgJGeDiEZB0NnZ39uZN3jR9Eplgew8mwJZNYU0vz/t8jiR3WnbNcZ3BCkHIcW8s+MHdSkHa/Zypk3MWhryQfW9Ez3Gycf8Q5qlYXAH/BaGcmGmO9M5rZp9IgNQUujBLCzc9/yUcZ+fydfoiT8Mkw/AFo6JPEFsxIR0kYstQI6Lsev2hGv16Oo1DyBV36J4HJ2CJ4OFnq9U4kfDzv65XtB7X46N2Zrs7UzuWjmbOJAn0VEc3sWpr7Qzlphew9TRjR+IROYWTv1UPdMH3UDiEw/9llrcFzNfLcoGv0HWl3ooEA1zRcxcRMzdyQ/exSZ+s+LZ1hWfy30aW1vS6GxZDcIIt6RJEJiOhxiTA+QSjyAPY9uyHWBS9ApQ589UGnqOMq2OLK0iZHmR+CEk2Zlu/q4H70uFmrub69NeV5/a1EP2bpGyVqRLRfod/ChXxzvF6mwg1txqqhUrb6T2WqJFezY/88fkTPmpglvag9NuNblUk1M9rGEwvYnH1z5/Yegw1j1B9LgmAwjSxWzqNVO3MhvHiSjAmtJeuE6VTGT8H9ZUMlpnaMErPni7KfBSlQBXG8zwUaBPwqVXxBZ1GIus/EjHZrl7UBvvy+Pd0wrYZP/Zmf16bVWXX3oqgtV0O5csj8MwjrqTEJzeNbukRdyXAxgF6ot2VQGb1kmk5DC3MXPuYuayhq7Xpt02t9q2rnXqrSeQ+8D4UFvaumPbcE97a5BXlO+xvTlA4QYRvmDctLFNER8ARcyxKHKpKRB3sA22TXuubRYQ4AcJv/GVHvkoWQd2SoJ83GDKxyVjPt76XlRvqRaE+rghrI/Lg3289ey/3sr8UNlRnYEf15j4ScnE3wZ9RamfNI/6ScnU36ZaLflXn/xJRcmfmptDFWkQ+TuWST3PpUgSyhHreS4Cj5rI7DEJknnM5W4BMX6iZJgaEAnjSxCPK/QXftJg+Cclwz/Z+o5Ue7UWxP+kIfxPyuN/snUUqL04P1SaVOcSAKlxCYCWXAJo4766VQDavCoALbkK0OZcbSGgFoUAWslCgPu+SgBtUCVgQGzKLW4jSwAghjlHQB2GsHC4ZVsDYZLFMWwS57lfjB/6VIWKALTBRQBachGAbn1DqrNQC+J/2hD+p+XxP906B9RZlx8qMaoz+tMaoz8rGf3bkK8k9bPmUT8rmfrbJKsF/qoDP6sq8L/npX/WIOAXPasHtjtAALaHGGCCgHMHWRwTEFQKp1fEt3qO/x5BHqwV4n3WYN5nZX+xf/uvodVXpwXhPmsI7rPycJ9t/83f+sryQ2VFdaZ9VmPat0qm/Tbiqwj7VvNg3yr76/1thtWyfgVZ/+WlhQGc+tFtuuJRsnD74bCfwFh79RQyHaDPY251MWH+GBFTA6l+kGSTlPeZxXK2wLe1+n/+W6S/KNbHetzX7unBX8eX14cHR9++Xp7/POsXvW0stfLUV//K5qkIVhZfWhEULoIf5xelJQ3/AF5DY4M=]]></ATT>
+      <ATT name="PdeProperties"></ATT>
+      <ATT name="Name"><![CDATA[Overview diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="PackageDiagram" mc="Standard.Stereotype" uid="24c648f8-d57b-11e0-8ec9-0027103f347c"/>
+      </LINK>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Standard.Note" uid="66073472-f098-46e6-86de-2079ee27ece1"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[This package diagram depicts the package organization of this project.]]></ATT>
+            <ATT name="MimeType"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
