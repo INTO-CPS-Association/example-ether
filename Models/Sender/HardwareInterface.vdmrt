@@ -5,4 +5,9 @@ instance variables
 -- @ interface: type = output, name="out";
 public out : StringPort := new StringPort("");
 
+values
+
+-- @ interface: type = parameter, name="controllerFrequency";
+public static controllerFrequency : RealPort = new RealPort(10);
+
 end HardwareInterface

@@ -8,28 +8,30 @@ Message :: x: real
 
 instance variables
 
+-- thread period
+private period: nat := 1E9;
+
+-- access shared variable "iin"
 iin: StringPort;
 
 operations
 
-public Controller: StringPort ==> Controller
-Controller(s) == (
+public Controller: nat1 * StringPort ==> Controller
+Controller(p,s) == (
+  period := frequency_to_period(p);
 	iin := s
 );
 
-private loop: () ==>()
-loop() == cycles(2) 
+private Step: () ==>()
+Step() == cycles(2) 
 (
 	-- read input
 	dcl input: seq of char := iin.getValue();
 	
-	IO`printf("RECEIVER.FMU: Got this whole string %s at %s\n", [input, time/1e9]);
-	
 	-- try to convert from string to list of strings
 	let mk_(list,l) = VDMUtilDebug`seq_of_char2val[seq of (real*real*real)](input)
 	in if list then (
-	  IO`printf("RECEIVER.FMU: Made this list %s at %s\n", [l, time/1e9]);
-		for all i in set inds l do (
+	  for all i in set inds l do (
 			let x = l(i) in 
 		    -- N.B. using a tuple until the library can handle custom types 
 			  -- debug 
@@ -45,7 +47,13 @@ loop() == cycles(2)
 	)
 );
 
-thread
-periodic(10E6,0,0,0)(loop);  
+-- run as a periodic thread
+thread periodic(period, 0 ,0, 0)(Step);
+
+functions 
+
+-- convert frequency to period in nanoseconds
+private frequency_to_period: real -> nat
+frequency_to_period(f) == floor 1E9/f  
 
 end Controller

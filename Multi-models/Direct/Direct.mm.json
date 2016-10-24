@@ -7,6 +7,8 @@
     "{sender}.sender.out": [
       "{receiver}.receiver.iin"]
   },
-  "parameters": {
+  "parameters":{  
+    "{sender}.sender.controllerFrequency":10,
+    "{receiver}.receiver.controllerFrequency":10
   }
 }

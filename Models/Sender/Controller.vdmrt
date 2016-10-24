@@ -8,22 +8,26 @@ Message :: x: real
 
 instance variables
 
+-- thread period
+private period: nat := 1E9;
+
 -- access shared variable "out"
 out: StringPort;
 
 operations
 
 -- constructor for controller
-public Controller: StringPort ==> Controller
-Controller(s) == (
+public Controller: nat1 * StringPort ==> Controller
+Controller(p,s) == (
+  period := frequency_to_period(p);
 	out := s;
 );
 
 operations
 
 -- send counter out and increase counter
-private loop: () ==>()
-loop() == cycles(2) 
+private Step: () ==>()
+Step() == cycles(2) 
 (
 	-- generate a random message
 	dcl m: Message := mk_Message(MATH`rand(10), MATH`rand(10), MATH`rand(10));
@@ -36,7 +40,13 @@ loop() == cycles(2)
   IO`printf("SENDER.FMU: Sent %s at %s\n", [m, time/1e9]);
 );
 
-thread
-periodic(10E6,0,0,0)(loop);  
+-- run as a periodic thread
+thread periodic(period, 0 ,0, 0)(Step);
+
+functions 
+
+-- convert frequency to period in nanoseconds
+private frequency_to_period: real -> nat
+frequency_to_period(f) == floor 1E9/f    
 
 end Controller

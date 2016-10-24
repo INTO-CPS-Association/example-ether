@@ -15,10 +15,11 @@ operations
 
 public System: () ==> System
 System() == (
-	ether := new Ether(100,--Hz
-		{mk_token("sender") 	|-> hwi.sender},
-		{mk_token("receiver") |-> hwi.receiver},
-		{mk_token("sender") 	|-> mk_token("receiver")}
+	ether := new Ether(
+	  HardwareInterface`controllerFrequency.getValue(),--Hz
+		{"sender" 	|-> hwi.sender},
+		{"receiver" |-> hwi.receiver},
+		{mk_("sender","receiver")}
 	);
   cpu1.deploy(ether, "Ether");
 );

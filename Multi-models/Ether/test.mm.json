@@ -10,7 +10,9 @@
     "{ether}.ether.receiver": [
       "{receiver}.receiver.iin"]
   },
-  "parameters": {
-    
-  }
+  "parameters":{  
+    "{sender}.sender.controllerFrequency":10,
+    "{receiver}.receiver.controllerFrequency":10,
+    "{ether}.ether.controllerFrequency":10
+  }  
 }

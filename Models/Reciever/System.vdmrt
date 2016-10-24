@@ -15,7 +15,9 @@ operations
 
 public System: () ==> System
 System() == (
-	controller := new Controller(hwi.iin);
+	controller := new Controller(
+	  HardwareInterface`controllerFrequency.getValue(),--Hz
+		hwi.iin);
   cpu1.deploy(controller,"Controller");
 );
 
