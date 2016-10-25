@@ -578,6 +578,7 @@
         <COMPID name="Sender" mc="Standard.Class" uid="6ed2f98f-ef11-4629-8046-29a99b3709d5"/>
         <COMPID name="Ether" mc="Standard.Class" uid="149114fc-dd9e-4c71-9452-e9e5bc633dac"/>
         <COMPID name="Receiver" mc="Standard.Class" uid="76eaf609-57ed-4919-9ea5-d0a5d256a61f"/>
+        <COMPID name="Hz" mc="Standard.DataType" uid="b8f18812-2651-400a-85da-b7e2b60849a3"/>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="Root" mc="Standard.Stereotype" uid="790408bd-a3b9-465b-aa18-dc5690cae3ea"/>
