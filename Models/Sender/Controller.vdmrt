@@ -14,6 +14,9 @@ private period: nat := 1E9;
 -- access shared variable "out"
 out: StringPort;
 
+list: seq of nat := [];
+i: nat := 1
+
 operations
 
 -- constructor for controller
@@ -30,14 +33,15 @@ private Step: () ==>()
 Step() == cycles(2) 
 (
 	-- generate a random message
-	dcl m: Message := mk_Message(MATH`rand(10), MATH`rand(10), MATH`rand(10));
+	list := list ^ [i];
+	i := i+1;
 
 	-- convert to string representation and send
 	-- N.B. using a tuple until the library can handle custom types
-	out.setValue(VDMUtil`val2seq_of_char[real*real*real](mk_(m.x, m.y, m.z))); 
+	out.setValue(VDMUtil`val2seq_of_char[seq of nat](list)); 
 
   -- debug
-  IO`printf("SENDER.FMU: Sent %s at %s\n", [m, time/1e9]);
+  IO`printf("SENDER.FMU: Sent %s at %s\n", [VDMUtil`val2seq_of_char[seq of nat](list), time/1e9]);
 );
 
 -- run as a periodic thread

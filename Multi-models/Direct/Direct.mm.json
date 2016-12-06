@@ -8,7 +8,7 @@
       "{receiver}.receiver.iin"]
   },
   "parameters":{  
-    "{sender}.sender.controllerFrequency":10,
-    "{receiver}.receiver.controllerFrequency":10
+    "{sender}.sender.controllerFrequency":1000,
+    "{receiver}.receiver.controllerFrequency":1000
   }
 }
