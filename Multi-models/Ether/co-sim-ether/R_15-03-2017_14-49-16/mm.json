@@ -1,0 +1,18 @@
+{
+  "fmus": {
+    "{sender}": "Sender.fmu",
+    "{receiver}": "Reciever.fmu",
+    "{ether}": "Ether.fmu"
+  },
+  "connections": {
+    "{sender}.sender.out": [
+      "{ether}.ether.sender"],
+    "{ether}.ether.receiver": [
+      "{receiver}.receiver.iin"]
+  },
+  "parameters":{  
+    "{sender}.sender.controllerFrequency":10,
+    "{receiver}.receiver.controllerFrequency":10,
+    "{ether}.ether.controllerFrequency":10
+  }  
+}
