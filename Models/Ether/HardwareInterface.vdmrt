@@ -1,3 +1,4 @@
+--##	EXPORT	eb252056a0605f8016a9935913579a675a1a974b	Ether.fmu	2016-15-12 10:38:27	tool-wrapper	{"name":"fmu-import-export","version":"0.1.5-SNAPSHOT"}
 class HardwareInterface
 
 instance variables
