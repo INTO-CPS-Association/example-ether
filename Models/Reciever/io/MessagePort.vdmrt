@@ -1,0 +1,65 @@
+class MessagePort
+
+types
+
+public Message :: x: real
+					 				y: real
+					 				z: real
+					 
+instance variables
+
+port: StringPort;
+value: seq of Message;
+
+operations
+
+-- constructor for MessagePort
+public MessagePort: StringPort ==> MessagePort
+MessagePort(p) == (
+	port := p;
+	value := []
+);
+
+-- set the value
+public setValue: MessagePort`Message ==> ()
+setValue(v) == (
+	value := [v];
+	port.setValue(toString(v))
+);
+
+-- get the value
+public getValue: () ==> seq of MessagePort`Message
+getValue() == (
+	let v = fromString(port.getValue()) 
+	in if v <> nil then (
+		value := v;
+		return value
+	) else (
+		return value
+	)
+);	
+
+-- convert the value to a string
+private toString: MessagePort`Message ==> seq of char
+toString(m) == (
+	return VDMUtil`val2seq_of_char[MessagePort`Message](m)
+);
+
+-- convert from a string
+private fromString: seq of char ==> [seq of MessagePort`Message]
+fromString(s) == (
+	if s = [] then (
+		IO`println("Received empty string");
+		return nil
+	);
+	
+	let mk_(b,msg) = VDMUtil`seq_of_char2val[seq of MessagePort`Message](s) in 
+		if b then (
+			return msg 
+		) else (
+			IO`printf("Could not convert \"%s\" to seq of MessagePort`Message\n", [s]);
+			return nil
+	)
+)
+
+end MessagePort

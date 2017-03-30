@@ -1,0 +1,135 @@
+class MessagePort
+
+types
+
+public Message :: x: real
+					 				y: real
+					 				z: real
+					 
+instance variables
+
+port: StringPort;
+value: seq of Message;
+
+operations
+
+-- constructor for MessagePort
+public MessagePort: StringPort ==> MessagePort
+MessagePort(p) == (
+	port := p;
+	value := []
+);
+
+-- set the value
+public setValue: MessagePort`Message ==> ()
+setValue(v) == (
+	value := [v];
+	port.setValue(toString(v))
+);
+
+-- get the value
+public getValue: () ==> seq of MessagePort`Message
+getValue() == (
+	let v = fromString(port.getValue()) 
+	in if v <> nil then (
+		value := v;
+		return value
+	) else (
+		return value
+	)
+);	
+
+-- convert the value to a string
+private toString: MessagePort`Message ==> seq of char
+toString(m) == (
+	return VDMUtil`val2seq_of_char[MessagePort`Message](m)
+);
+
+private fromString: seq of char ==> [seq of MessagePort`Message]
+fromString(s) == (
+	if s = [] then (
+		IO`println("Received empty string");
+		return nil
+	);
+	
+	let mk_(b,msg) = VDMUtil`seq_of_char2val[seq of MessagePort`Message](s) in 
+		if b then (
+			return msg 
+		) else (
+			IO`printf("Could not convert \"%s\" to seq of MessagePort`Message\n", [s]);
+			return nil
+	)
+)
+
+end MessagePort
+
+/*
+class MessagePort
+
+types
+
+public Message :: x: real
+					 				y: real
+					 				z: real
+					 
+instance variables
+
+value: Message;
+
+operations
+
+-- constructor for MessagePort
+public MessagePort: StringPort * Access * Message ==> MessagePort
+MessagePort(p, a, m) == (
+	port := p;
+	access := a;
+	value := m
+);
+
+-- set the value
+public setValue: Message ==> ()
+setValue(v) == (
+	value := v;
+	flushed := false
+);
+
+-- get the value
+public getValue: () ==> Message
+getValue() == return value;
+
+-- convert the value to a string
+private toString: Message ==> seq of char
+toString(v) == (
+	return VDMUtil`val2seq_of_char[real*real*real](mk_(v.x, v.y, v.z))
+);
+
+private fromStrong: seq of char ==> Message
+fromString(s) == (
+	
+)
+
+types
+
+public Access = <WRITE> | <READONLY>
+
+instance variables
+
+port: StringPort;
+access: Access;
+flushed: bool := false;
+
+operations
+
+public syncValue: () ==> ()
+syncValue() == (
+	if access = <WRITE> and not flushed then (
+		port.setValue(toString(value));
+		flushed := true
+	) else (
+		value := fromString(port.getValue())
+	)
+);
+
+
+end MessagePort
+*/

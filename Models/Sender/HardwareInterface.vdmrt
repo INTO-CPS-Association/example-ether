@@ -1,3 +1,5 @@
+--##	EXPORT	a964d8e98a4f766a47199bd69af30860d0eeb930	Sender.fmu	2017-30-03 16:37:08	tool-wrapper	{"name":"fmu-import-export","version":"0.2.1-SNAPSHOT"}
+--##	EXPORT	e1ab695e8127ad3fc639f9ec1c0d5ee2c9e07127	Sender.fmu	2017-29-03 17:45:25	tool-wrapper	{"name":"fmu-import-export","version":"0.2.1-SNAPSHOT"}
 class HardwareInterface
 
 instance variables
