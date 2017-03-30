@@ -1,0 +1,12 @@
+time,step-size,{ether}.ether.receiver,{sender}.sender.out
+0.0,0.0,,
+5.0E-5,5.0E-5,[],mk_MessagePort`Message(4, 9, 2)
+0.1,0.09995000000000001,[mk_MessagePort`Message(4, 9, 2)],mk_MessagePort`Message(1, 9, 6)
+0.2,0.1,[mk_MessagePort`Message(4, 9, 2)],mk_MessagePort`Message(6, 6, 0)
+0.3,0.09999999999999998,[mk_MessagePort`Message(1, 9, 6),mk_MessagePort`Message(6, 6, 0)],mk_MessagePort`Message(1, 6, 8)
+0.4,0.10000000000000003,[mk_MessagePort`Message(1, 9, 6),mk_MessagePort`Message(6, 6, 0)],mk_MessagePort`Message(8, 4, 6)
+0.5,0.09999999999999998,[mk_MessagePort`Message(1, 6, 8),mk_MessagePort`Message(8, 4, 6)],mk_MessagePort`Message(4, 8, 0)
+0.6,0.09999999999999998,[mk_MessagePort`Message(1, 6, 8),mk_MessagePort`Message(8, 4, 6)],mk_MessagePort`Message(3, 9, 3)
+0.7,0.09999999999999998,[mk_MessagePort`Message(4, 8, 0),mk_MessagePort`Message(3, 9, 3)],mk_MessagePort`Message(9, 8, 0)
+0.8,0.10000000000000009,[mk_MessagePort`Message(4, 8, 0),mk_MessagePort`Message(3, 9, 3)],mk_MessagePort`Message(9, 6, 8)
+0.9,0.09999999999999998,[mk_MessagePort`Message(9, 8, 0),mk_MessagePort`Message(9, 6, 8)],mk_MessagePort`Message(3, 4, 3)
