@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Ether_Indirect_Test_Model" version="4">
+  <OBJECT>
+    <ID name="Ether_Indirect_Test_Model" mc="Standard.Package" uid="64536edf-b5f8-47c3-9b04-3ba9c95784b2"/>
+    <PID name="RTTesterExample" mc="Standard.Project" uid="0f592074-58bb-4bf6-a1eb-fd7d78ae8848"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Ether_Indirect_Test_Model]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Datatypes" mc="Standard.Package" uid="c8ad00d6-3162-4382-8429-bbb07a4b89f0"/>
+        <COMPID name="System" mc="Standard.Class" uid="d0d1b172-f518-461a-b61f-33c5fff25e50"/>
+        <COMPID name="SystemUnderTest" mc="Standard.Class" uid="90e0f28d-4b8a-485a-975f-741e1db5aedf"/>
+        <COMPID name="TestEnvironment" mc="Standard.Class" uid="aa6e0cd6-dcf1-4011-b726-5f78e27e3c44"/>
+        <COMPID name="End1" mc="Standard.Class" uid="a504f8e1-844a-42ee-85e2-a0a967f9f3f9"/>
+        <COMPID name="Ether" mc="Standard.Class" uid="13a0f2b6-443a-4815-8735-8d8d23ccc2ad"/>
+        <COMPID name="Stimuli" mc="Standard.Interface" uid="3f6bb003-a5c5-4579-ab90-61839735eb8d"/>
+        <COMPID name="Observables" mc="Standard.Interface" uid="54bf9d84-1c0c-438b-a88a-eb4a032269ff"/>
+        <COMPID name="OutMsgIF" mc="Standard.Interface" uid="d2017ca2-6bd7-4081-911d-ab5878ceded2"/>
+        <COMPID name="End2" mc="Standard.Class" uid="f4069d43-1b6c-4bb2-a548-1990c725a0c7"/>
+        <COMPID name="OutMsgIF2" mc="Standard.Interface" uid="b22359c3-75b5-4f05-a7fa-9c7a09368e41"/>
+        <COMPID name="TESimulator" mc="Standard.Class" uid="9f9b1019-67ec-412f-bf7e-936042fd3fd8"/>
+        <COMPID name="InMsgIF" mc="Standard.Interface" uid="4eb76a13-98c4-49d5-8e1b-349e5db6e7c3"/>
+        <COMPID name="InMsgIF2" mc="Standard.Interface" uid="fabefdd5-de77-4486-b446-c080c25176f2"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
