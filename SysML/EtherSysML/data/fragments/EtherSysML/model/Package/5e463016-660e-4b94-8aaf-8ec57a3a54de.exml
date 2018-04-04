@@ -580,33 +580,6 @@
         <COMPID name="Receiver" mc="Standard.Class" uid="76eaf609-57ed-4919-9ea5-d0a5d256a61f"/>
         <COMPID name="Hz" mc="Standard.DataType" uid="b8f18812-2651-400a-85da-b7e2b60849a3"/>
       </COMP>
-      <LINK relation="Extension">
-        <FOREIGNID name="Root" mc="Standard.Stereotype" uid="790408bd-a3b9-465b-aa18-dc5690cae3ea"/>
-      </LINK>
-      <COMP relation="Tag">
-        <OBJECT>
-          <ID name="" mc="Standard.TaggedValue" uid="ce8e7f6a-2452-4abb-bd06-18f1f6a3e72b"/>
-          <ATTRIBUTES>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <COMP relation="Actual">
-              <OBJECT>
-                <ID name="" mc="Standard.TagParameter" uid="97099a01-7ab8-4fd6-ac18-5c8e6be982c1"/>
-                <ATTRIBUTES>
-                  <ATT name="Value"><![CDATA[/Users/nrjp6/Documents/Projects/INTO-CPS/INTO-CPS_Git/case-study_ether/SysML/EtherSysML/Simulation]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
-              </OBJECT>
-            </COMP>
-            <LINK relation="Definition">
-              <FOREIGNID name="Root_filepath" mc="Standard.TagType" uid="3bf934f7-9529-4913-a002-16ce575a7985"/>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-      </COMP>
       <COMP relation="Product">
         <COMPID name="Overview diagram" mc="Standard.StaticDiagram" uid="0cfa6d70-bd26-4de8-815a-7811889d8593"/>
         <COMPID name="Architecture diagram" mc="Standard.ClassDiagram" uid="d114029d-0255-4fad-ae91-72674cfbeeb4"/>
