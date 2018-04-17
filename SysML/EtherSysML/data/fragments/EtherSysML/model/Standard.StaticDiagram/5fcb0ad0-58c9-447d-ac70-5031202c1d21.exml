@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT version="4" object="Architecture diagram">
+  <OBJECT>
+    <ID uid="5fcb0ad0-58c9-447d-ac70-5031202c1d21" mc="Standard.StaticDiagram" name="Architecture diagram"></ID>
+    <PID uid="d4c06163-cfa3-4753-830d-c716a6639860" mc="Standard.Package" name="Architecture"></PID>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">111</ATT>
+      <ATT name="UiData">eJyNUdtuwjAM/ZWo74S2A7FJBTTBNKGxi4a01ylNDARyQYnL6N8vhRZtTKt4iu34+PgcZ+ODVmQPzktrhlFC44iMR9lrvgGORIpQigiWOxhG1q2otgKUtFRItnJMUxASraMeGcotBQUaDPpTzpumR7045tNTHhHNNtZ9nknjaJS9ObsDhyUxTAcuxUpb4JQhC38fTBVQL2EKpaLuKOs2gD/QBZYKol8S0jYJvur3lFsH9IS9Yr8J85wJEA3ZwwHfYXkly0sYUSMJHHCaz8KOx7AKfOn1pcTuSUybbAeKIYiwxYVjz1WJ7KtKZc6PQ5D+kucxE3Gnf8vvOr3eQHQYH4Q0vknSOOWJSJN2sxXz+GTsl5mzHNQF8wKdNKsz973ja4lBRuGA1L60T3dWwcxMrN5ZLzHcop2gfdhkLZVwUM2YS195WT//IubSbH1Le3OVbwhdJLE=</ATT>
+      <ATT name="Name">Architecture diagram</ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID uid="00bc42ac-0000-1016-0000-000000000000" mc="Infrastructure.Stereotype" name="BlockDiagram"></FOREIGNID>
+      </LINK>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID uid="8d95f629-2aab-4640-816f-55b78535e386" mc="Infrastructure.Note" name=""></ID>
+          <ATTRIBUTES>
+            <ATT name="Content">The Block Diagram in SysML defines features of blocks and relationships between blocks such as associations, generalizations, and dependencies.
+ It captures the definition of blocks in terms of operations, and relationships such as a system hierarchy or a system classification tree.</ATT>
+            <ATT name="MimeType"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID uid="00000000-0000-3e81-0000-000000000000" mc="Infrastructure.NoteType" name="description"></FOREIGNID>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

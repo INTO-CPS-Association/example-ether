@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT version="4" object="Equations">
+  <OBJECT>
+    <ID uid="d959a68f-aa6b-4a12-acc7-5c12ad3ed799" mc="Standard.Package" name="Equations"></ID>
+    <PID uid="5e463016-660e-4b94-8aaf-8ec57a3a54de" mc="Standard.Package" name="ethersysml"></PID>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name">Equations</ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DependsOnDependency">
+        <OBJECT>
+          <ID uid="120cb73c-a877-4632-8d75-96b261cb3514" mc="Infrastructure.Dependency" name=""></ID>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID uid="bf43f3e7-9fc5-4d8b-8f69-5641b1982cb4" mc="Standard.StaticDiagram" name="Equations diagram"></ID>
+            </LINK>
+            <LINK relation="Extension">
+              <FOREIGNID uid="2961d57b-5120-11de-bbaf-00218648fa3d" mc="Infrastructure.Stereotype" name="related_diagram"></FOREIGNID>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID uid="bf43f3e7-9fc5-4d8b-8f69-5641b1982cb4" mc="Standard.StaticDiagram" name="Equations diagram"></COMPID>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID uid="1b6c7236-4bf1-4540-a6f9-4e21ca259d0b" mc="Infrastructure.Note" name=""></ID>
+          <ATTRIBUTES>
+            <ATT name="Content">System equations shall be modeled here  in terms of contraints blocks, contraint properties and contraints.
+
+Diagrams:
+Use "Block diagrams" to expose the set of existing contraint.
+Use "'Internal Block diagrams" for modelling the equation architecture.</ATT>
+            <ATT name="MimeType"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID uid="00000000-0000-3e81-0000-000000000000" mc="Infrastructure.NoteType" name="description"></FOREIGNID>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

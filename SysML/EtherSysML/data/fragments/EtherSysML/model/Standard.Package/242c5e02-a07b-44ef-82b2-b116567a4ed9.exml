@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT version="4" object="Use Cases">
+  <OBJECT>
+    <ID uid="242c5e02-a07b-44ef-82b2-b116567a4ed9" mc="Standard.Package" name="Use Cases"></ID>
+    <PID uid="5e463016-660e-4b94-8aaf-8ec57a3a54de" mc="Standard.Package" name="ethersysml"></PID>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name">Use Cases</ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DependsOnDependency">
+        <OBJECT>
+          <ID uid="766cbb5e-5953-4b68-8e81-dbb752bf0fda" mc="Infrastructure.Dependency" name=""></ID>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID uid="756000f8-765a-4f96-9115-80a7fb39e07c" mc="Standard.UseCaseDiagram" name="Use Cases diagram"></ID>
+            </LINK>
+            <LINK relation="Extension">
+              <FOREIGNID uid="2961d57b-5120-11de-bbaf-00218648fa3d" mc="Infrastructure.Stereotype" name="related_diagram"></FOREIGNID>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID uid="756000f8-765a-4f96-9115-80a7fb39e07c" mc="Standard.UseCaseDiagram" name="Use Cases diagram"></COMPID>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID uid="a6c99301-32df-46b3-ae8c-de80718550d8" mc="Infrastructure.Note" name=""></ID>
+          <ATTRIBUTES>
+            <ATT name="Content">System use cases shall be modeled here by defining its use cases, the actors and theirs relationships.
+
+Diagrams:
+Use "Use case diagrams" to provide an overview of the system uses cases.</ATT>
+            <ATT name="MimeType"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID uid="00000000-0000-3e81-0000-000000000000" mc="Infrastructure.NoteType" name="description"></FOREIGNID>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

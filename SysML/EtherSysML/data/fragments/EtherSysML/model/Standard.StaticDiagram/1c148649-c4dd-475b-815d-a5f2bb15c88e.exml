@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT version="4" object="Data Types diagram">
+  <OBJECT>
+    <ID uid="1c148649-c4dd-475b-815d-a5f2bb15c88e" mc="Standard.StaticDiagram" name="Data Types diagram"></ID>
+    <PID uid="f263c5c6-5daa-41cc-a374-1d7c565fd022" mc="Standard.Package" name="Data Types"></PID>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">109</ATT>
+      <ATT name="UiData">eJyNUcluwjAQ/RXL9xiCkjaVWA5QVah0Ual6rZx4oAYvyB4o+fs6TYJaqkac7Nnem/dmODlqRQ7gvLRmRGPWp2QyHj7lGyiQSBFSlGC5gxG1bs20FaCkZULyteOagZBoHfPIUW4ZKNBg0Ndx0Tbd6eV3PKtjSjTfWPd+Iu3T8fDZ2R04LInhOnApXto9zjjyUHvjag/NEmavFO2Nh7124M/oEksF9JeEQZcEX/V7VlgHrJ69YL8p9wUXIFqy2yO+wOpClscA0UwSOOIsn4cdv7/Vx5den0vs1WK6ZDtQHEGELc4ce6hS5FBlKnN+HILERZxkV8lNVCRCRMl1mkdZnIqIp6tBnsdpkWXQbbbiHu+N/TQLnoM6Y16ik2Z94q6uSV5DxZPGlW5sZxXMzdTqnfUSwyW64bvBph9SCQcVxkL6ysnm+XdiIc3Wd7S3N/kCqn8j0A==</ATT>
+      <ATT name="Name">Data Types diagram</ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID uid="00bc42ac-0000-1016-0000-000000000000" mc="Infrastructure.Stereotype" name="BlockDiagram"></FOREIGNID>
+      </LINK>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID uid="83253415-8974-48f8-9c0f-7a1d95505c39" mc="Infrastructure.Note" name=""></ID>
+          <ATTRIBUTES>
+            <ATT name="Content">The Block Diagram in SysML might be use for defining the available data types.</ATT>
+            <ATT name="MimeType"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID uid="00000000-0000-3e81-0000-000000000000" mc="Infrastructure.NoteType" name="description"></FOREIGNID>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

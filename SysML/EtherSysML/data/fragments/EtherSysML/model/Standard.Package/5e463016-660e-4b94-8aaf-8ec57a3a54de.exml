@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?><!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT version="4" object="ethersysml">
+  <OBJECT>
+    <ID uid="5e463016-660e-4b94-8aaf-8ec57a3a54de" mc="Standard.Package" name="ethersysml"></ID>
+    <PID uid="5a657590-3b89-489c-9bda-3cbd4c756ff6" mc="Standard.Project" name="EtherSysML"></PID>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name">ethersysml</ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedInformationFlow">
+        <OBJECT>
+          <ID uid="f7ba1ce5-ad22-45dd-a2d7-b50e3e343733" mc="Standard.InformationFlow" name="msg"></ID>
+          <ATTRIBUTES>
+            <ATT name="Name">msg</ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <REFOBJ>
+                <ID uid="675020c1-e805-49ae-bfd1-4c55e5393fed" mc="Standard.Port" name="out"></ID>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <REFOBJ>
+                <ID uid="a3a8eee3-43db-4cf8-ac11-4357649bbaa3" mc="Standard.Port" name="iin"></ID>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="RealizingLink">
+              <REFOBJ>
+                <ID uid="f772ee52-4818-4c1f-b380-3755cf8b82e8" mc="Standard.ConnectorEnd" name=""></ID>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Conveyed">
+              <FOREIGNID uid="6ba90c81-39b9-4015-8c47-1ab27cf9d19d" mc="Standard.DataType" name="String"></FOREIGNID>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID uid="7a756b92-d2f0-43de-afec-5c6696d16b01" mc="Standard.InformationFlow" name="msg"></ID>
+          <ATTRIBUTES>
+            <ATT name="Name">msg</ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <REFOBJ>
+                <ID uid="ee65850c-d4d5-4bf8-9643-bf9f76aa0208" mc="Standard.Port" name="out"></ID>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <REFOBJ>
+                <ID uid="7608d8e4-ee5c-4f60-bd13-dd8384c66832" mc="Standard.Port" name="sender"></ID>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="RealizingLink">
+              <REFOBJ>
+                <ID uid="0f3199cc-fc1a-46ed-b793-0376bcdbd74c" mc="Standard.ConnectorEnd" name=""></ID>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Conveyed">
+              <FOREIGNID uid="6ba90c81-39b9-4015-8c47-1ab27cf9d19d" mc="Standard.DataType" name="String"></FOREIGNID>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID uid="b98f2a88-f30b-4967-a3d0-754d815dfb0d" mc="Standard.InformationFlow" name="msg"></ID>
+          <ATTRIBUTES>
+            <ATT name="Name">msg</ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <REFOBJ>
+                <ID uid="1e873c67-5721-416e-b0db-453f929f5b18" mc="Standard.Port" name="receiver"></ID>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <REFOBJ>
+                <ID uid="54a4ba90-ca84-4770-92bc-565b4ebe861a" mc="Standard.Port" name="inn"></ID>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="RealizingLink">
+              <REFOBJ>
+                <ID uid="a6112c8e-d410-415a-9086-aec3f464d8d8" mc="Standard.ConnectorEnd" name=""></ID>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Conveyed">
+              <FOREIGNID uid="6ba90c81-39b9-4015-8c47-1ab27cf9d19d" mc="Standard.DataType" name="String"></FOREIGNID>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Declared">
+        <OBJECT>
+          <ID uid="c0893682-ff4e-4b2b-8d86-2c35a22cf513" mc="Standard.Instance" name="Direct"></ID>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin">1</ATT>
+            <ATT name="MultiplicityMax">1</ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name">Direct</ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Base">
+              <ID uid="d13f452f-c2ae-471f-809f-56157e4a234a" mc="Standard.Class" name="Ether_Study"></ID>
+            </LINK>
+            <COMP relation="Part">
+              <OBJECT>
+                <ID uid="53e94885-b5f4-4a7d-b1e5-d4326b9a3a36" mc="Standard.BindableInstance" name="receiver"></ID>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin">1</ATT>
+                  <ATT name="MultiplicityMax">1</ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name">receiver</ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID uid="76eaf609-57ed-4919-9ea5-d0a5d256a61f" mc="Standard.Class" name="Receiver"></ID>
+                  </LINK>
+                  <COMP relation="Part">
+                    <OBJECT>
+                      <ID uid="a3a8eee3-43db-4cf8-ac11-4357649bbaa3" mc="Standard.Port" name="iin"></ID>
+                      <ATTRIBUTES>
+                        <ATT name="IsBehavior">false</ATT>
+                        <ATT name="IsService">true</ATT>
+                        <ATT name="IsConjugated">false</ATT>
+                        <ATT name="Direction">In</ATT>
+                        <ATT name="IsConstant">false</ATT>
+                        <ATT name="MultiplicityMin">1</ATT>
+                        <ATT name="MultiplicityMax">1</ATT>
+                        <ATT name="Value"></ATT>
+                        <ATT name="Name">iin</ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="RepresentedFeature">
+                          <REFOBJ>
+                            <ID uid="e0196f2d-eef2-4786-9e4b-04e1af4bb008" mc="Standard.Port" name="iin"></ID>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Extension">
+                    <FOREIGNID uid="281c6cee-4f91-476d-bbed-ac66449f0897" mc="Infrastructure.Stereotype" name="BlockInstance"></FOREIGNID>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID uid="cefb33e5-3f49-46d2-aed9-0b3396a19c03" mc="Standard.BindableInstance" name="sender"></ID>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin">1</ATT>
+                  <ATT name="MultiplicityMax">1</ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name">sender</ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID uid="6ed2f98f-ef11-4629-8046-29a99b3709d5" mc="Standard.Class" name="Sender"></ID>
+                  </LINK>
+                  <COMP relation="Part">
+                    <OBJECT>
+                      <ID uid="675020c1-e805-49ae-bfd1-4c55e5393fed" mc="Standard.Port" name="out"></ID>
+                      <ATTRIBUTES>
+                        <ATT name="IsBehavior">false</ATT>
+                        <ATT name="IsService">true</ATT>
+                        <ATT name="IsConjugated">false</ATT>
+                        <ATT name="Direction">Out</ATT>
+                        <ATT name="IsConstant">false</ATT>
+                        <ATT name="MultiplicityMin">1</ATT>
+                        <ATT name="MultiplicityMax">1</ATT>
+                        <ATT name="Value"></ATT>
+                        <ATT name="Name">out</ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="RepresentedFeature">
+                          <REFOBJ>
+                            <ID uid="32a278be-6065-4ba4-9ed7-0fe987d8ae9e" mc="Standard.Port" name="out"></ID>
+                          </REFOBJ>
+                        </LINK>
+                        <COMP relation="OwnedEnd">
+                          <OBJECT>
+                            <ID uid="f772ee52-4818-4c1f-b380-3755cf8b82e8" mc="Standard.ConnectorEnd" name=""></ID>
+                            <ATTRIBUTES>
+                              <ATT name="IsOrdered">false</ATT>
+                              <ATT name="IsUnique">false</ATT>
+                              <ATT name="MultiplicityMax">1</ATT>
+                              <ATT name="MultiplicityMin">0</ATT>
+                              <ATT name="Name"></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES>
+                              <COMP relation="Link">
+                                <OBJECT>
+                                  <ID uid="a3ea333b-e764-432a-a177-91bbf3f3f147" mc="Standard.Connector" name=""></ID>
+                                  <ATTRIBUTES>
+                                    <ATT name="Name"></ATT>
+                                    <ATT name="status">1970354901745664</ATT>
+                                  </ATTRIBUTES>
+                                  <DEPENDENCIES></DEPENDENCIES>
+                                </OBJECT>
+                              </COMP>
+                              <LINK relation="Target">
+                                <REFOBJ>
+                                  <ID uid="a3a8eee3-43db-4cf8-ac11-4357649bbaa3" mc="Standard.Port" name="iin"></ID>
+                                </REFOBJ>
+                              </LINK>
+                              <COMP relation="Opposite">
+                                <OBJECT>
+                                  <ID uid="a7aed3a2-1fb9-4d40-b5f6-3c57295e876d" mc="Standard.ConnectorEnd" name="msg"></ID>
+                                  <ATTRIBUTES>
+                                    <ATT name="IsOrdered">false</ATT>
+                                    <ATT name="IsUnique">false</ATT>
+                                    <ATT name="MultiplicityMax">1</ATT>
+                                    <ATT name="MultiplicityMin">0</ATT>
+                                    <ATT name="Name">msg</ATT>
+                                    <ATT name="status">1970354901745664</ATT>
+                                  </ATTRIBUTES>
+                                  <DEPENDENCIES>
+                                    <COMP relation="Link">
+                                      <COMPID uid="a3ea333b-e764-432a-a177-91bbf3f3f147" mc="Standard.Connector" name=""></COMPID>
+                                    </COMP>
+                                    <COMP relation="Opposite">
+                                      <COMPID uid="f772ee52-4818-4c1f-b380-3755cf8b82e8" mc="Standard.ConnectorEnd" name=""></COMPID>
+                                    </COMP>
+                                  </DEPENDENCIES>
+                                </OBJECT>
+                              </COMP>
+                            </DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Extension">
+                    <FOREIGNID uid="281c6cee-4f91-476d-bbed-ac66449f0897" mc="Infrastructure.Stereotype" name="BlockInstance"></FOREIGNID>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Extension">
+              <FOREIGNID uid="281c6cee-4f91-476d-bbed-ac66449f0897" mc="Infrastructure.Stereotype" name="BlockInstance"></FOREIGNID>
+            </LINK>
+            <COMP relation="DependsOnDependency">
+              <OBJECT>
+                <ID uid="1ae58999-d3d7-4f5d-bd20-51ca6a7f387d" mc="Infrastructure.Dependency" name=""></ID>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="DependsOn">
+                    <ID uid="631d90c0-b90e-48ef-ba05-5977eafd9331" mc="Standard.ObjectDiagram" name="Connections diagram"></ID>
+                  </LINK>
+                  <LINK relation="Extension">
+                    <FOREIGNID uid="2961d57b-5120-11de-bbaf-00218648fa3d" mc="Infrastructure.Stereotype" name="related_diagram"></FOREIGNID>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID uid="0f6bc8d5-7fd1-4968-a64a-8c90153928c2" mc="Standard.Instance" name="Ether"></ID>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin">1</ATT>
+            <ATT name="MultiplicityMax">1</ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name">Ether</ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Base">
+              <ID uid="d13f452f-c2ae-471f-809f-56157e4a234a" mc="Standard.Class" name="Ether_Study"></ID>
+            </LINK>
+            <COMP relation="Part">
+              <OBJECT>
+                <ID uid="2d300c6b-eb90-4957-9beb-4a8edd55bbf1" mc="Standard.BindableInstance" name="sender"></ID>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin">1</ATT>
+                  <ATT name="MultiplicityMax">1</ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name">sender</ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID uid="6ed2f98f-ef11-4629-8046-29a99b3709d5" mc="Standard.Class" name="Sender"></ID>
+                  </LINK>
+                  <COMP relation="Part">
+                    <OBJECT>
+                      <ID uid="ee65850c-d4d5-4bf8-9643-bf9f76aa0208" mc="Standard.Port" name="out"></ID>
+                      <ATTRIBUTES>
+                        <ATT name="IsBehavior">false</ATT>
+                        <ATT name="IsService">true</ATT>
+                        <ATT name="IsConjugated">false</ATT>
+                        <ATT name="Direction">Out</ATT>
+                        <ATT name="IsConstant">false</ATT>
+                        <ATT name="MultiplicityMin">1</ATT>
+                        <ATT name="MultiplicityMax">1</ATT>
+                        <ATT name="Value"></ATT>
+                        <ATT name="Name">out</ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="RepresentedFeature">
+                          <REFOBJ>
+                            <ID uid="32a278be-6065-4ba4-9ed7-0fe987d8ae9e" mc="Standard.Port" name="out"></ID>
+                          </REFOBJ>
+                        </LINK>
+                        <COMP relation="OwnedEnd">
+                          <OBJECT>
+                            <ID uid="0f3199cc-fc1a-46ed-b793-0376bcdbd74c" mc="Standard.ConnectorEnd" name=""></ID>
+                            <ATTRIBUTES>
+                              <ATT name="IsOrdered">false</ATT>
+                              <ATT name="IsUnique">false</ATT>
+                              <ATT name="MultiplicityMax">1</ATT>
+                              <ATT name="MultiplicityMin">0</ATT>
+                              <ATT name="Name"></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES>
+                              <COMP relation="Link">
+                                <OBJECT>
+                                  <ID uid="ae08645c-ed6d-4637-a0ed-4646833065fc" mc="Standard.Connector" name=""></ID>
+                                  <ATTRIBUTES>
+                                    <ATT name="Name"></ATT>
+                                    <ATT name="status">1970354901745664</ATT>
+                                  </ATTRIBUTES>
+                                  <DEPENDENCIES></DEPENDENCIES>
+                                </OBJECT>
+                              </COMP>
+                              <LINK relation="Target">
+                                <REFOBJ>
+                                  <ID uid="7608d8e4-ee5c-4f60-bd13-dd8384c66832" mc="Standard.Port" name="sender"></ID>
+                                </REFOBJ>
+                              </LINK>
+                              <COMP relation="Opposite">
+                                <OBJECT>
+                                  <ID uid="f070f9e5-0dea-45df-90ec-32ede85c196c" mc="Standard.ConnectorEnd" name="msg"></ID>
+                                  <ATTRIBUTES>
+                                    <ATT name="IsOrdered">false</ATT>
+                                    <ATT name="IsUnique">false</ATT>
+                                    <ATT name="MultiplicityMax">1</ATT>
+                                    <ATT name="MultiplicityMin">0</ATT>
+                                    <ATT name="Name">msg</ATT>
+                                    <ATT name="status">1970354901745664</ATT>
+                                  </ATTRIBUTES>
+                                  <DEPENDENCIES>
+                                    <COMP relation="Link">
+                                      <COMPID uid="ae08645c-ed6d-4637-a0ed-4646833065fc" mc="Standard.Connector" name=""></COMPID>
+                                    </COMP>
+                                    <COMP relation="Opposite">
+                                      <COMPID uid="0f3199cc-fc1a-46ed-b793-0376bcdbd74c" mc="Standard.ConnectorEnd" name=""></COMPID>
+                                    </COMP>
+                                  </DEPENDENCIES>
+                                </OBJECT>
+                              </COMP>
+                            </DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Extension">
+                    <FOREIGNID uid="281c6cee-4f91-476d-bbed-ac66449f0897" mc="Infrastructure.Stereotype" name="BlockInstance"></FOREIGNID>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID uid="c793c386-4c61-454b-9a7d-8e1670b5ba72" mc="Standard.BindableInstance" name="ether"></ID>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin">1</ATT>
+                  <ATT name="MultiplicityMax">1</ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name">ether</ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID uid="149114fc-dd9e-4c71-9452-e9e5bc633dac" mc="Standard.Class" name="Ether"></ID>
+                  </LINK>
+                  <COMP relation="Part">
+                    <OBJECT>
+                      <ID uid="7608d8e4-ee5c-4f60-bd13-dd8384c66832" mc="Standard.Port" name="sender"></ID>
+                      <ATTRIBUTES>
+                        <ATT name="IsBehavior">false</ATT>
+                        <ATT name="IsService">true</ATT>
+                        <ATT name="IsConjugated">false</ATT>
+                        <ATT name="Direction">In</ATT>
+                        <ATT name="IsConstant">false</ATT>
+                        <ATT name="MultiplicityMin">1</ATT>
+                        <ATT name="MultiplicityMax">1</ATT>
+                        <ATT name="Value"></ATT>
+                        <ATT name="Name">sender</ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="RepresentedFeature">
+                          <REFOBJ>
+                            <ID uid="04581123-8ce1-4948-a7ef-78f3de33a4d2" mc="Standard.Port" name="sender"></ID>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID uid="1e873c67-5721-416e-b0db-453f929f5b18" mc="Standard.Port" name="receiver"></ID>
+                      <ATTRIBUTES>
+                        <ATT name="IsBehavior">false</ATT>
+                        <ATT name="IsService">true</ATT>
+                        <ATT name="IsConjugated">false</ATT>
+                        <ATT name="Direction">Out</ATT>
+                        <ATT name="IsConstant">false</ATT>
+                        <ATT name="MultiplicityMin">1</ATT>
+                        <ATT name="MultiplicityMax">1</ATT>
+                        <ATT name="Value"></ATT>
+                        <ATT name="Name">receiver</ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="RepresentedFeature">
+                          <REFOBJ>
+                            <ID uid="05edf85c-d518-409d-896c-78cced201737" mc="Standard.Port" name="receiver"></ID>
+                          </REFOBJ>
+                        </LINK>
+                        <COMP relation="OwnedEnd">
+                          <OBJECT>
+                            <ID uid="a6112c8e-d410-415a-9086-aec3f464d8d8" mc="Standard.ConnectorEnd" name=""></ID>
+                            <ATTRIBUTES>
+                              <ATT name="IsOrdered">false</ATT>
+                              <ATT name="IsUnique">false</ATT>
+                              <ATT name="MultiplicityMax">1</ATT>
+                              <ATT name="MultiplicityMin">0</ATT>
+                              <ATT name="Name"></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES>
+                              <COMP relation="Link">
+                                <OBJECT>
+                                  <ID uid="0d33bdb6-d7f3-407c-9f3e-fff12a2f7944" mc="Standard.Connector" name=""></ID>
+                                  <ATTRIBUTES>
+                                    <ATT name="Name"></ATT>
+                                    <ATT name="status">1970354901745664</ATT>
+                                  </ATTRIBUTES>
+                                  <DEPENDENCIES></DEPENDENCIES>
+                                </OBJECT>
+                              </COMP>
+                              <LINK relation="Target">
+                                <REFOBJ>
+                                  <ID uid="54a4ba90-ca84-4770-92bc-565b4ebe861a" mc="Standard.Port" name="inn"></ID>
+                                </REFOBJ>
+                              </LINK>
+                              <COMP relation="Opposite">
+                                <OBJECT>
+                                  <ID uid="9fa3fae7-ceb3-4b18-911b-5383359e99fe" mc="Standard.ConnectorEnd" name="msg"></ID>
+                                  <ATTRIBUTES>
+                                    <ATT name="IsOrdered">false</ATT>
+                                    <ATT name="IsUnique">false</ATT>
+                                    <ATT name="MultiplicityMax">1</ATT>
+                                    <ATT name="MultiplicityMin">0</ATT>
+                                    <ATT name="Name">msg</ATT>
+                                    <ATT name="status">1970354901745664</ATT>
+                                  </ATTRIBUTES>
+                                  <DEPENDENCIES>
+                                    <COMP relation="Link">
+                                      <COMPID uid="0d33bdb6-d7f3-407c-9f3e-fff12a2f7944" mc="Standard.Connector" name=""></COMPID>
+                                    </COMP>
+                                    <COMP relation="Opposite">
+                                      <COMPID uid="a6112c8e-d410-415a-9086-aec3f464d8d8" mc="Standard.ConnectorEnd" name=""></COMPID>
+                                    </COMP>
+                                  </DEPENDENCIES>
+                                </OBJECT>
+                              </COMP>
+                            </DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Extension">
+                    <FOREIGNID uid="281c6cee-4f91-476d-bbed-ac66449f0897" mc="Infrastructure.Stereotype" name="BlockInstance"></FOREIGNID>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID uid="7285819b-9673-4209-b17c-06811744ebef" mc="Standard.BindableInstance" name="receiver"></ID>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin">1</ATT>
+                  <ATT name="MultiplicityMax">1</ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name">receiver</ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID uid="76eaf609-57ed-4919-9ea5-d0a5d256a61f" mc="Standard.Class" name="Receiver"></ID>
+                  </LINK>
+                  <COMP relation="Part">
+                    <OBJECT>
+                      <ID uid="54a4ba90-ca84-4770-92bc-565b4ebe861a" mc="Standard.Port" name="inn"></ID>
+                      <ATTRIBUTES>
+                        <ATT name="IsBehavior">false</ATT>
+                        <ATT name="IsService">true</ATT>
+                        <ATT name="IsConjugated">false</ATT>
+                        <ATT name="Direction">In</ATT>
+                        <ATT name="IsConstant">false</ATT>
+                        <ATT name="MultiplicityMin">1</ATT>
+                        <ATT name="MultiplicityMax">1</ATT>
+                        <ATT name="Value"></ATT>
+                        <ATT name="Name">inn</ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="RepresentedFeature">
+                          <REFOBJ>
+                            <ID uid="e0196f2d-eef2-4786-9e4b-04e1af4bb008" mc="Standard.Port" name="iin"></ID>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Extension">
+                    <FOREIGNID uid="281c6cee-4f91-476d-bbed-ac66449f0897" mc="Infrastructure.Stereotype" name="BlockInstance"></FOREIGNID>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Extension">
+              <FOREIGNID uid="281c6cee-4f91-476d-bbed-ac66449f0897" mc="Infrastructure.Stereotype" name="BlockInstance"></FOREIGNID>
+            </LINK>
+            <COMP relation="DependsOnDependency">
+              <OBJECT>
+                <ID uid="2c5ea6ff-cc3f-4575-89d9-9c059544d83f" mc="Infrastructure.Dependency" name=""></ID>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="DependsOn">
+                    <ID uid="f72b1861-e9b8-4b59-b7b0-0f22bf9386bd" mc="Standard.ObjectDiagram" name="Connections diagram1"></ID>
+                  </LINK>
+                  <LINK relation="Extension">
+                    <FOREIGNID uid="2961d57b-5120-11de-bbaf-00218648fa3d" mc="Infrastructure.Stereotype" name="related_diagram"></FOREIGNID>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID uid="d959a68f-aa6b-4a12-acc7-5c12ad3ed799" mc="Standard.Package" name="Equations"></COMPID>
+        <COMPID uid="242c5e02-a07b-44ef-82b2-b116567a4ed9" mc="Standard.Package" name="Use Cases"></COMPID>
+        <COMPID uid="7503bb83-e23c-49b8-ab30-094eae4b48c8" mc="Standard.Package" name="Items and Flows"></COMPID>
+        <COMPID uid="d4c06163-cfa3-4753-830d-c716a6639860" mc="Standard.Package" name="Architecture"></COMPID>
+        <COMPID uid="f263c5c6-5daa-41cc-a374-1d7c565fd022" mc="Standard.Package" name="Data Types"></COMPID>
+        <COMPID uid="d13f452f-c2ae-471f-809f-56157e4a234a" mc="Standard.Class" name="Ether_Study"></COMPID>
+        <COMPID uid="6ed2f98f-ef11-4629-8046-29a99b3709d5" mc="Standard.Class" name="Sender"></COMPID>
+        <COMPID uid="149114fc-dd9e-4c71-9452-e9e5bc633dac" mc="Standard.Class" name="Ether"></COMPID>
+        <COMPID uid="76eaf609-57ed-4919-9ea5-d0a5d256a61f" mc="Standard.Class" name="Receiver"></COMPID>
+        <COMPID uid="b8f18812-2651-400a-85da-b7e2b60849a3" mc="Standard.DataType" name="Hz"></COMPID>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID uid="0cfa6d70-bd26-4de8-815a-7811889d8593" mc="Standard.StaticDiagram" name="Overview diagram"></COMPID>
+        <COMPID uid="d114029d-0255-4fad-ae91-72674cfbeeb4" mc="Standard.ClassDiagram" name="Architecture diagram"></COMPID>
+        <COMPID uid="631d90c0-b90e-48ef-ba05-5977eafd9331" mc="Standard.ObjectDiagram" name="Connections diagram"></COMPID>
+        <COMPID uid="f72b1861-e9b8-4b59-b7b0-0f22bf9386bd" mc="Standard.ObjectDiagram" name="Connections diagram1"></COMPID>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

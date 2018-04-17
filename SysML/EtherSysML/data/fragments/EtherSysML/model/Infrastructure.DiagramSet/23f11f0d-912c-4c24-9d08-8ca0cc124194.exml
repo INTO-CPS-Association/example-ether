@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT version="4" object="EtherSysML">
+  <OBJECT>
+    <ID uid="23f11f0d-912c-4c24-9d08-8ca0cc124194" mc="Infrastructure.DiagramSet" name="EtherSysML"></ID>
+    <PID uid="5a657590-3b89-489c-9bda-3cbd4c756ff6" mc="Standard.Project" name="EtherSysML"></PID>
+    <ATTRIBUTES>
+      <ATT name="Name">EtherSysML</ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>
